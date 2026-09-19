@@ -19,3 +19,57 @@ body{
     height: 100px;
     width: 100px;
 }
+
+.button{
+    font-size: 20px;
+    padding: 8px 16px;
+}
+
+.login{
+    width: 400px;
+    margin: 150px auto;
+    padding: 30px;
+    text-align: left;
+    font-size: 20px;
+    background-color: #dee2e6;
+    border: solid  #003087;
+}
+
+.login-field{
+     width: 100%;
+     border: 2px solid  #003087;
+     padding: 12px;
+     margin: 15px 0;
+     box-sizing: border-box;
+}
+
+.login-field2{
+width: 100%;
+     margin: 15px 0;
+  
+}
+
+.register{
+width: 400px;
+    margin: 150px auto;
+    padding: 30px;
+    text-align: left;
+    font-size: 20px;
+   background-color: #dee2e6;
+    border: solid  #003087;
+}
+
+.register-field{
+     width: 100%;
+     border: 2px solid  #003087;
+     padding: 12px;
+     margin: 15px 0;
+     box-sizing: border-box;
+}
+
+.register-field2{
+width: 100%;
+     margin: 15px 0;
+   
+}
+
