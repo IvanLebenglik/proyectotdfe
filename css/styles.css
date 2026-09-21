@@ -73,3 +73,16 @@ width: 100%;
    
 }
 
+.producto1{
+    display: flex;
+    margin: 15px;
+    justify-content: space-between;
+    width: 1180px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 80px;
+}
+
+.producto{
+    width: 380px;
+}
