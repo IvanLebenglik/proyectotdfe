@@ -4,65 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Smart UdeSA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Home</title>
 </head>
 
 <body>
 
     <header>
 
-        <nav class="login-register">
-            <ul>
-                <li>
-                    <a href="login.html">Login</a>
-                </li>
-                <li>
-                    <a href="register.html">Register</a>
-                </li>
-            </ul>
-        </nav>
-
         <a class="logo" href="./index.html">
             <img class="logo1" src="./img/logoSmart.png" alt="Smart UdeSA">
         </a>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <form class="buscador" action="./search-results.html" method="GET">
+            <div>
+                <label for="busqueda">Buscar:</label>
+                <input id="busqueda" type="text" name="busqueda" value="" placeholder="Buscar un auto">
+            </div>
+            <div>
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
 
     </header>
 
     <main>
 
-        <nav class="nav-categorias">
+        <aside>
 
-            <h2>Categorias</h2>
+            <nav class="nav-categorias">
 
-            <ul class="menu-categorias">
-                <li><a href="./category.html">Beauty</a></li>
-                <li><a href="./category.html">Fragrances</a></li>
-                <li><a href="./category.html">Furniture</a></li>
-                <li><a href="./category.html">Groceries</a></li>
-                <li><a href="./category.html">Home decoration</a></li>
-                <li><a href="./category.html">Kitchen accessories</a></li>
-                <li><a href="./category.html">Laptops</a></li>
-                <li><a href="./category.html">Mens shirts</a></li>
-                <li><a href="./category.html">Mens shoes</a></li>
-                <li><a href="./category.html">Mens watches</a></li>
-                <li><a href="./category.html">Mobile accessories</a></li>
-                <li><a href="./category.html">Motorcycle</a></li>
-                <li><a href="./category.html">Skin care</a></li>
-                <li><a href="./category.html">Smartphones</a></li>
-                <li><a href="./category.html">Sports accessories</a></li>
-                <li><a href="./category.html">Sunglasses</a></li>
-                <li><a href="./category.html">Tablets</a></li>
-                <li><a href="./category.html">Tops</a></li>
-                <li><a href="./category.html">Vehicle</a></li>
-                <li><a href="./category.html">Womens bags</a></li>
-                <li><a href="./category.html">Womens dresses</a></li>
-                <li><a href="./category.html">Womens jewellery</a></li>
-                <li><a href="./category.html">Womens shoes</a></li>
-                <li><a href="./category.html">Womens watches</a></li>
-            </ul>
+                <h2>Categorias</h2>
 
-        </nav>
+                <ul class="menu-categorias">
+                    <li><a href="./category.html">Beauty</a></li>
+                    <li><a href="./category.html">Fragrances</a></li>
+                    <li><a href="./category.html">Furniture</a></li>
+                    <li><a href="./category.html">Groceries</a></li>
+                    <li><a href="./category.html">Home decoration</a></li>
+                    <li><a href="./category.html">Kitchen accessories</a></li>
+                    <li><a href="./category.html">Laptops</a></li>
+                    <li><a href="./category.html">Mens shirts</a></li>
+                    <li><a href="./category.html">Mens shoes</a></li>
+                    <li><a href="./category.html">Mens watches</a></li>
+                    <li><a href="./category.html">Mobile accessories</a></li>
+                    <li><a href="./category.html">Motorcycle</a></li>
+                    <li><a href="./category.html">Skin care</a></li>
+                    <li><a href="./category.html">Smartphones</a></li>
+                    <li><a href="./category.html">Sports accessories</a></li>
+                    <li><a href="./category.html">Sunglasses</a></li>
+                    <li><a href="./category.html">Tablets</a></li>
+                    <li><a href="./category.html">Tops</a></li>
+                    <li><a href="./category.html">Vehicle</a></li>
+                    <li><a href="./category.html">Womens bags</a></li>
+                    <li><a href="./category.html">Womens dresses</a></li>
+                    <li><a href="./category.html">Womens jewellery</a></li>
+                    <li><a href="./category.html">Womens shoes</a></li>
+                    <li><a href="./category.html">Womens watches</a></li>
+                </ul>
+
+            </nav>
+
+        </aside>
 
         <section class="productos-aleatorios">
 
@@ -246,7 +260,19 @@
 
     </main>
 
-    <footer></footer>
+    <footer>
+
+        <p>Smart UdeSA</p>
+
+        <h2>Integrantes del equipo</h2>
+
+        <ul class="integrantes">
+            <li>Iván Lebenglik</li>
+            <li>Tomás Andrés</li>
+            <li>Bernardo Sánchez</li>
+        </ul>
+
+    </footer>
 
 </body>
 
