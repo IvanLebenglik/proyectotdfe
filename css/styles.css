@@ -186,21 +186,22 @@ header {
 }
 
 .login{
-    width: 400px;
-    margin: 150px auto;
-    padding: 30px;
-    text-align: left;
-    font-size: 20px;
-    background-color: #dee2e6;
-    border: solid  #003087;
+width: 400px;
+margin: 150px auto;
+padding: 30px;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+ background-color: #dee2e6;
+ border: solid #003087;
 }
 
 .login-field{
-     width: 100%;
-     border: 2px solid  #003087;
-     padding: 12px;
-     margin: 15px 0;
-     box-sizing: border-box;
+   width: 100%;
+   border: 2px solid #003087;
+   padding: 12px;
+   margin: 15px 0;
+   box-sizing: border-box;
 }
 
 .login-field2{
