@@ -236,11 +236,12 @@ width: 100%;
 .producto1{
     display: flex;
     margin: 15px;
-    justify-content: space-between;
     width: 1180px;
+    justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 80px;
+    padding: 50px;
+
 }
 
 
