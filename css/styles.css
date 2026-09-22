@@ -1,23 +1,123 @@
-*{
+/* 1. Reset y base (Ivan) */
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: lightblue;
-     background-image: url(../img/backSmartUdesa.png);
-}
-.login-register{
-    text-align: end;
-    font-size: 20px;
-    text-decoration: none;
+ul,
+ol {
+    list-style: none;
 }
 
-.logo1
-{
-    height: 200px;
-    width: 200px;
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    color: #333333;
+    background-color: #dee2e6;
+    background-image: url("../img/backSmartUdesa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Share Tech Mono", monospace;
+    color: #003087;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* 2. Header y nav superior (Ivan) */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #003087;
+    border-bottom: 4px solid #00529B;
+}
+
+.logo img {
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+
+.menu-principal ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu-principal li {
+    margin-left: 20px;
+    border-right: 1px solid #dee2e6;
+}
+
+.menu-principal a {
+    padding: 0 10px;
+    color: #dee2e6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buscador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buscador label {
+    margin-right: 10px;
+    color: #dee2e6;
+    font-size: 18px;
+}
+
+.buscador input {
+    width: 220px;
+    padding: 8px 12px;
+    border: 2px solid #00529B;
+    border-radius: 6px;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+}
+
+.buscador button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #00529B;
+    color: #ffffff;
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .button{
