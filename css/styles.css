@@ -311,7 +311,10 @@ width: 100%;
 
 }
 
-
+.menu-categorias{
+    background-color: #dee2e6;
+    border: 2px solid #003087;
+}
 
 
 /* ========== RESPONSIVE (siempre al final) ========== */
