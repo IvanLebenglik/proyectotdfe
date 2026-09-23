@@ -1,60 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autos | Smart UdeSA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;family=Share+Tech+Mono&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
+      <a class="logo" href="./index.html">
+        <img src="./img/logoSmart.png" alt="Smart UdeSA" />
+      </a>
 
-        <a class="logo" href="./index.html">
-            <img src="./img/logoSmart.png" alt="Smart UdeSA">
-        </a>
+      <form class="buscador" action="./search-results.html" method="GET">
+        <div>
+          <label for="busqueda">Buscar:</label>
+          <input
+            id="busqueda"
+            type="text"
+            name="busqueda"
+            value=""
+            placeholder="Buscar un auto"
+          />
+        </div>
+        <div>
+          <button type="submit">Buscar</button>
+        </div>
+      </form>
 
-        <form class="buscador" action="./search-results.html" method="GET">
-            <div>
-                <label for="busqueda">Buscar:</label>
-                <input id="busqueda" type="text" name="busqueda" value="" placeholder="Buscar un auto">
-            </div>
-            <div>
-                <button type="submit">Buscar</button>
-            </div>
-        </form>
-
-        <nav class="menu-principal">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./register.html">Register</a></li>
-            </ul>
-        </nav>
-
+      <nav class="menu-principal">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html">Register</a></li>
+        </ul>
+      </nav>
     </header>
 
-   <img src="./img/corolla.png">
-
+    <article class="reseña">
+      <img src="./img/corolla-cross.png" alt="Toyota Corolla Cross" />
+      <h3>Toyota Corolla Cross</h3>
+      <p class="descripcion">SUV compacta, buena altura y espacio interior.</p>
+      <p class="precio">$ 48.600.000</p>
+    </article>
     <footer>
+        
+      <p>Smart UdeSA</p>
 
-        <p>Smart UdeSA</p>
+      <h2>Integrantes del equipo</h2>
 
-        <h2>Integrantes del equipo</h2>
-
-        <ul class="integrantes">
-            <li>Iván Lebenglik</li>
-            <li>Tomás Andrés</li>
-            <li>Bernardo Sánchez</li>
-        </ul>
-
+      <ul class="integrantes">
+        <li>Iván Lebenglik</li>
+        <li>Tomás Andrés</li>
+        <li>Bernardo Sánchez</li>
+      </ul>
     </footer>
-
-</body>
-
+  </body>
 </html>
