@@ -50,6 +50,14 @@ h3 {
     font-size: 20px;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
 /* 2. Header y nav superior (Ivan) */
 
 header {
@@ -124,6 +132,39 @@ header {
 
 /* 4. Footer (Ivan) */
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #003087;
+    color: #dee2e6;
+    border-top: 4px solid #00529B;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer h2 {
+    margin: 10px 0;
+    color: #dee2e6;
+    font-size: 20px;
+}
+
+.integrantes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.integrantes li {
+    padding: 0 15px;
+    border-right: 1px solid #dee2e6;
+}
+
 /* 5. Tarjeta de producto (Bernardo) */
 .producto {
     background-color: #ffffff;
@@ -173,6 +214,34 @@ header {
 }
 
 /* 6. Home (Ivan) */
+
+.contenido-home {
+    width: 78%;
+}
+
+.productos-aleatorios,
+.mas-vendidos {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.productos-aleatorios h2,
+.mas-vendidos h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #003087;
+}
+
+.grilla-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grilla-home article {
+    margin-bottom: 30px;
+}
 
 /* 7. Categoria y busqueda (Bernardo) */
 
