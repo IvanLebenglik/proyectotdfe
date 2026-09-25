@@ -337,11 +337,211 @@ footer h2 {
     margin: 15px 0;
 }
 
-/* ========== RESPONSIVE (siempre al final) ========== */
 
-@media (max-width:420px){
-    
+@media (max-width: 768px) {
+
+    main {
+        padding: 20px;
+    }
+
 }
+
+@media (max-width: 450px) {
+
+    main {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+}
+
+/* R2. Header y nav superior (Ivan) */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .menu-principal {
+        order: 2;
+    }
+
+    .buscador {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .logo img {
+        width: 90px;
+        height: 90px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu-principal {
+        margin-top: 10px;
+    }
+
+    .menu-principal li {
+        margin-left: 0;
+    }
+
+    .menu-principal a {
+        font-size: 18px;
+    }
+
+    .buscador input {
+        width: 150px;
+    }
+
+}
+
+/* R3. Menu de categorias (Tomas) */
+
+@media (max-width: 768px) {
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu-categorias {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu-categorias li {
+        width: 25%;
+        padding: 2px 5px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .menu-categorias li {
+        width: 50%;
+    }
+
+}
+
+/* R4. Footer (Ivan) */
+
+@media (max-width: 450px) {
+
+    footer {
+        padding: 20px 10px;
+    }
+
+}
+
+/* R5. Tarjeta de producto (Bernardo) */
+
+@media (max-width: 768px) {
+
+    .producto {
+        width: 48%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .producto {
+        width: 100%;
+    }
+
+}
+
+/* R6. Home (Ivan) */
+
+@media (max-width: 768px) {
+
+    .contenido-home {
+        width: 100%;
+    }
+
+}
+
+/* R7. Categoria y busqueda (Bernardo) */
+
+@media (max-width: 768px) {
+
+    .categoria,
+    .resultados {
+        width: 100%;
+    }
+
+}
+
+/* R8. Detalle de producto (Tomas) */
+
+@media (max-width: 768px) {
+
+    .contenido-producto {
+        width: 100%;
+    }
+
+    .detalle-producto,
+    .reviews {
+        margin: 20px 0;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .detalle-producto img {
+        width: 100%;
+    }
+
+    .detalle-producto,
+    .reviews {
+        padding: 15px;
+    }
+
+}
+
+/* R9. Login y registro (Tomas) */
+
+@media (max-width: 450px) {
+
+    .login,
+    .register {
+        width: 100%;
+    }
+
+}
+
+    
+
 
 
 
