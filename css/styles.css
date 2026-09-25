@@ -1,4 +1,4 @@
-/* 1. Reset y base (Ivan) */
+
 
 * {
     box-sizing: border-box;
@@ -58,7 +58,7 @@ main {
     padding: 30px 40px;
 }
 
-/* 2. Header y nav superior (Ivan) */
+
 
 header {
     display: flex;
@@ -128,9 +128,6 @@ header {
     font-weight: bold;
 }
 
-/* 3. Menu de categorias (Tomas) */
-
-/* 4. Footer (Ivan) */
 
 footer {
     display: flex;
@@ -173,6 +170,7 @@ footer h2 {
     padding: 16px;
     width: 250px;
     text-align: center;
+  
 }
 
 .producto img {
@@ -239,9 +237,7 @@ footer h2 {
     margin-bottom: 30px;
 }
 
-/* 7. Categoria y busqueda (Bernardo) */
 
-/* 8. Detalle de producto (Tomas) */
 .detalle-producto,
 .reviews {
     background-color: #dee2e6;
@@ -251,7 +247,7 @@ footer h2 {
     margin: 20px;
 }
 
-/* 9. Login y registro (Tomas) */
+
 
 .button{
     font-size: 20px;
@@ -324,6 +320,9 @@ width: 100%;
     border: 2px solid #003087;
 }
 
+@media (max-width:420px){
+    
+}
 
 
-/* ========== RESPONSIVE (siempre al final) ========== */
+
