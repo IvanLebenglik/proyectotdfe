@@ -1,47 +1,25 @@
-console.log("login.js")
+let login = document.querySelector(".login")
+let email = document.querySelector("#email")
+let password = document.querySelector("#password")
+let mensajelogin = document.querySelector(".errorlogin")
 
-let formulario = document.querySelector(".login");
-let email = document.querySelector("#email");
-let password = document.querySelector("#password");
+login.addEventListener("submit", function(event) {
+    event.preventDefault()
 
-email.addEventListener("blur", function () {
-  console.log("dentro del email con blur");
+    if (email.value == "") {
+        mensajelogin.innerText = "El email es obligatorio"
+    }
 
-  if (email.value == "") {
-    alert("Este campo es obligatorio");
-  }
-});
+    else if (password.value == "") {
+    mensajelogin.innerText = "La contraseña es obligatoria"
+    }
 
-password.addEventListener("blur", function () {
-  console.log("dentro del password con blur");
+    else if (password.value.length < 6) {
+        mensajelogin.innerText = "La contraseña debe tener al menos 6 caracteres"
+    }
 
-  if (password.value == "") {
-    alert("Este campo es obligatorio");
-  }
-});
-
-formulario.addEventListener("submit", function (event) {
-  event.preventDefault();
-  console.log("dentro del eventListener");
-
-  if (email.value == "") {
-    console.log("Este campo es obligatorio");
-    alert("Este campo es obligatorio");
-    return;
-  }
-
-  if (password.value == "") {
-    console.log("Este campo es obligatorio");
-    alert("Este campo es obligatorio");
-    return;
-  }
-
-  if (password.value.length < 6) {
-    console.log("La contraseña debe tener al menos 6 caracteres");
-    alert("La contraseña debe tener al menos 6 caracteres");
-    return;
-  }
-
-  localStorage.setItem("email", email.value);
-  this.submit();
-});
+    else {
+        localStorage.setItem("email", email.value)
+        window.location.href = "./index.html"
+    }
+})

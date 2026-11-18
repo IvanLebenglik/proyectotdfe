@@ -1,64 +1,28 @@
-console.log("register.js")
+let Registro = document.querySelector (".register")
+let Email = document.querySelector("#email")
+let Password = document.querySelector("#password")
+let RepetirPassword = document.querySelector("#repetir-password")
+let Terminos = document.querySelector (".register-accion")
+let errorRegistro = document.querySelector ("#error-register")
 
-let formulario = document.querySelector(".register");
-let email = document.querySelector("#email");
-let password = document.querySelector("#password");
-let repetirPassword = document.querySelector("#repetir-password");
-
-email.addEventListener("blur", function () {
-  console.log("dentro del email con blur");
-
-  if (email.value == "") {
-    alert("Este campo es obligatorio");
-  }
-});
-
-password.addEventListener("blur", function () {
-  console.log("dentro del password con blur");
-
-  if (password.value == "") {
-    alert("Este campo es obligatorio");
-  }
-});
-
-repetirPassword.addEventListener("blur", function () {
-  if (password.value != repetirPassword.value) {
-    alert("Las contraseñas no coinciden");
-  }
-});
-
-formulario.addEventListener("submit", function (event) {
-  event.preventDefault();
-  console.log("dentro del eventListener");
-
-  if (email.value == "") {
-    console.log("Este campo es obligatorio");
-    alert("Este campo es obligatorio");
-    return;
-  }
-
-  if (password.value == "") {
-    console.log("Este campo es obligatorio");
-    alert("Este campo es obligatorio");
-    return;
-  }
-
-  if (repetirPassword.value == "") {
-    alert("Las contraseñas no coinciden");
-    return;
-  }
-
-  if (password.value != repetirPassword.value) {
-    alert("Las contraseñas no coinciden");
-    return;
-  }
-
-  if (password.value.length < 6) {
-    console.log("La contraseña debe tener al menos 6 caracteres");
-    alert("La contraseña debe tener al menos 6 caracteres");
-    return;
-  }
-
-  localStorage.setItem("email", email.value);
-  this.submit();
-});
+Registro.addEventListener("submit", function(event){
+    event.preventDefault()
+    if (Email.value == ""){
+        errorRegistro.innerText = "El email es obligatorio"
+    }
+    else if (Password.value == ""){
+        errorRegistro.innerText = "La contraseña es obligatoria"
+    }
+    else if (Password.value.length < 6){
+        errorRegistro.innerText = "La contraseña debe de tener al menos 6 caracteres"
+    }
+    else if (Password.value != RepetirPassword.value){
+        errorRegistro.innerText = "Las contraseñas debe de coincidir"
+    }
+    else if (Terminos.checked == false){
+        errorRegistro.innerText = "Debes de aceptar los terminos y condiciones"
+    }
+    else{
+        Registro.submit()
+    }
+})
