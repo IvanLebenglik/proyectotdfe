@@ -18,6 +18,7 @@
         <a class="logo" href="./index.html">
             <img src="./img/logo-smart.png" alt="Smart UdeSA">
         </a>
+
         <form class="buscador" action="./search-results.html" method="GET">
             <div>
                 <label for="busqueda">Buscar:</label>
@@ -26,12 +27,16 @@
             <div>
                 <button type="submit">Buscar</button>
             </div>
+            <p class="error-buscador"></p>
         </form>
+
         <nav class="menu-principal">
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./register.html">Register</a></li>
+                <li class="item-login"><a href="./login.html">Login</a></li>
+                <li class="item-register"><a href="./register.html">Register</a></li>
+                <li class="item-bienvenida"></li>
+                <li class="item-logout"><a href="#">Logout</a></li>
             </ul>
         </nav>
 
@@ -46,30 +51,6 @@
                 <h2>Categorias</h2>
 
                 <ul class="menu-categorias">
-                    <li><a href="./category.html">Beauty</a></li>
-                    <li><a href="./category.html">Fragrances</a></li>
-                    <li><a href="./category.html">Furniture</a></li>
-                    <li><a href="./category.html">Groceries</a></li>
-                    <li><a href="./category.html">Home decoration</a></li>
-                    <li><a href="./category.html">Kitchen accessories</a></li>
-                    <li><a href="./category.html">Laptops</a></li>
-                    <li><a href="./category.html">Mens shirts</a></li>
-                    <li><a href="./category.html">Mens shoes</a></li>
-                    <li><a href="./category.html">Mens watches</a></li>
-                    <li><a href="./category.html">Mobile accessories</a></li>
-                    <li><a href="./category.html">Motorcycle</a></li>
-                    <li><a href="./category.html">Skin care</a></li>
-                    <li><a href="./category.html">Smartphones</a></li>
-                    <li><a href="./category.html">Sports accessories</a></li>
-                    <li><a href="./category.html">Sunglasses</a></li>
-                    <li><a href="./category.html">Tablets</a></li>
-                    <li><a href="./category.html">Tops</a></li>
-                    <li><a href="./category.html">Vehicle</a></li>
-                    <li><a href="./category.html">Womens bags</a></li>
-                    <li><a href="./category.html">Womens dresses</a></li>
-                    <li><a href="./category.html">Womens jewellery</a></li>
-                    <li><a href="./category.html">Womens shoes</a></li>
-                    <li><a href="./category.html">Womens watches</a></li>
                 </ul>
 
             </nav>
@@ -118,9 +99,11 @@
         </ul>
 
     </footer>
-<script src="./js/product.js"></script>
-<script src="./js/saludo.js"></script>
-<script src="./js/logout.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/saludo.js"></script>
+    <script src="./js/logout.js"></script>
+    <script src="./js/buscador.js"></script>
+    <script src="./js/categorias.js"></script>
 </body>
 
 </html>

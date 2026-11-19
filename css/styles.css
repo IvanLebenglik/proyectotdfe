@@ -124,6 +124,17 @@ header {
     font-weight: bold;
 }
 
+.error-buscador {
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.item-bienvenida {
+    padding: 0 10px;
+    color: #dee2e6;
+    font-size: 20px;
+}
+
 .menu-categorias {
     background-color: #dee2e6;
     border: 2px solid #003087;
@@ -209,14 +220,14 @@ footer h2 {
     width: 78%;
 }
 
-.productos-aleatorios,
-.mas-vendidos {
+.celulares,
+.accesorios {
     width: 100%;
     margin-bottom: 40px;
 }
 
-.productos-aleatorios h2,
-.mas-vendidos h2 {
+.celulares h2,
+.accesorios h2 {
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #003087;
@@ -307,6 +318,8 @@ footer h2 {
 }
 
 .formulario-centrado {
+    display: flex;
+    width: 78%;
     height: 80vh;
     justify-content: center;
     align-items: center;
@@ -501,6 +514,14 @@ footer h2 {
     .detalle-producto,
     .reviews {
         padding: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .formulario-centrado {
+        width: 100%;
     }
 
 }
