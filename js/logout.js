@@ -1,15 +1,11 @@
-console.log("logout.js");
-let logoutt = document.querySelector("#logout")
-let loginn = document.querySelector("#login")
-let registerr = document.querySelector("#register")
-let bienvenidaa = document.querySelector("#bienvenido")
+let linkLogout = document.querySelector(".item-logout a");
 
-logoutt.addEventListener("click", function(event) {
-    event.preventDefault()
+linkLogout.addEventListener("click", function (event) {
+    event.preventDefault();
 
-    localStorage.removeItem("email")
-    logoutt.style.display = "none"
-    bienvenidaa.style.display = "none"
-    loginn.style.display = "block"
-    registerr.style.display = "block"
-})
+    localStorage.removeItem("email");
+    itemBienvenida.style.display = "none";
+    itemLogout.style.display = "none";
+    itemLogin.style.display = "block";
+    itemRegister.style.display = "block";
+});

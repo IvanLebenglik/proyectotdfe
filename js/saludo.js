@@ -1,14 +1,15 @@
-console.log("saludo.js");
-let login = document.querySelector("#login")
-let register = document.querySelector("#register")
-let bienvenida = document.querySelector("#bienvenido")
-let logout = document.querySelector("#logout")
+let itemLogin = document.querySelector(".item-login");
+let itemRegister = document.querySelector(".item-register");
+let itemBienvenida = document.querySelector(".item-bienvenida");
+let itemLogout = document.querySelector(".item-logout");
 
-let emailusuario = localStorage.getItem("email")
+let emailUsuario = localStorage.getItem("email");
 
-if (emailusuario != null) {
-    login.style.display = "none"
-    register.style.display = "none"
-    bienvenida.innerText = "Bienvenido " + emailusuario
-    logout.innerHTML = '<a class ="menu-principal" href="#">Logout</a>'
+if (emailUsuario != null) {
+    itemLogin.style.display = "none";
+    itemRegister.style.display = "none";
+    itemBienvenida.innerText = "Bienvenido: " + emailUsuario;
+} else {
+    itemBienvenida.style.display = "none";
+    itemLogout.style.display = "none";
 }

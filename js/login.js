@@ -11,7 +11,7 @@ login.addEventListener("submit", function(event) {
     }
 
     else if (password.value == "") {
-    mensajelogin.innerText = "La contraseña es obligatoria"
+        mensajelogin.innerText = "La contraseña es obligatoria"
     }
 
     else if (password.value.length < 6) {
@@ -20,6 +20,6 @@ login.addEventListener("submit", function(event) {
 
     else {
         localStorage.setItem("email", email.value)
-        window.location.href = "./index.html"
+        this.submit()
     }
 })
