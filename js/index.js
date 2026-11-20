@@ -1,7 +1,7 @@
 let listaCelulares = document.querySelector(".celulares .grilla-home");
 let listaAccesorios = document.querySelector(".accesorios .grilla-home");
 
-fetch("https://dummyjson.com/products/category/smartphones")
+fetch("https://dummyjson.com/products/category/smartphones?limit=10")
     .then(function (response) {
         return response.json();
     })
@@ -23,7 +23,7 @@ fetch("https://dummyjson.com/products/category/smartphones")
         console.log("El error es: " + error);
     });
 
-fetch("https://dummyjson.com/products/category/mobile-accessories")
+fetch("https://dummyjson.com/products/category/mobile-accessories?limit=10")
     .then(function (response) {
         return response.json();
     })
